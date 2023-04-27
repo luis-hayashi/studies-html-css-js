@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700&family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700&family=Quicksand:wght@400;700&display=swap');
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    margin: 0;
+}
+
+body h3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    background: #afafaf;
+}
+
+header h1
+{
+    background: black;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+header h2
+{
+    margin-left: 200px;
+    margin-top: 50px;
+    font-family: 'Alex Brush', sans-serif;
+    text-transform: lowercase;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+header li
+{
+    padding: 24px 15px;
+    list-style: none;
+}
+
+header li a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 10px;
+}
+
+header li a:hover,
+.activated
+{
+    color: white;
+    background: black;
+    padding: 10px;
+    animation: anim .3s;
+}
+
+@keyframes anim
+{
+    0%
+    {
+        color: black;
+        background: #afafaf;
+    }
+
+    100%
+    {
+        color: white;
+        background: black;
+    }
+}
+
+.cards
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+}
+
+.card
+{
+    position: relative;
+    width: 380px;
+    height: 520px;
+    background: #292929;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 150px;
+    margin-left: 150px;
+    box-shadow: 0 0 20px #000;
+}
+
+.card::before
+{
+    content: '';
+    position: absolute;
+    top: -50%;;
+    left: -50%;
+    width: 380px;
+    height: 520px;
+    background: linear-gradient(0deg,transparent, #ff45c7, #ff45c7);
+    transform-origin: bottom right;
+    animation: animation 6s linear infinite;
+}
+
+.card::after
+{
+    content: '';
+    position: absolute;
+    top: -50%;;
+    left: -50%;
+    width: 380px;
+    height: 520px;
+    background: linear-gradient(0deg,transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animation 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyframes animation {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.box
+{
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: white;
+    z-index: 9;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box h1
+{
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.form-menu
+{
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.form-menu h2
+{
+    margin-top: 175px;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.forms
+{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto
+{
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #afafaf;
+    color: black;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.btn
+{
+    width: 200px;
+    margin-left: 50px;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background: #000000;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #000000;
+}

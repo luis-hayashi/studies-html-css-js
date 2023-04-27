@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700&family=Quicksand:wght@400;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #000000;
+}
+
+.card {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.image {
+    z-index: 10;
+    background: gray;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 170px;
+}
+
+.main-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25vw;
+    height: 45vh;
+    background: #fff;
+    padding: 20px;
+}

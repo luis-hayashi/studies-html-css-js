@@ -1,0 +1,30 @@
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.menu-principal
+{
+    width: 100%;
+    background-color: #000000;
+    height: 87px;
+}
+
+.header h1
+{
+    color: white;
+    float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 10px;
+    left: 80px;
+    position: relative;
+}
+
+main, .content
+{
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}

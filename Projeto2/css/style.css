@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    min-width: 100vh;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+}
+
+header #logo
+{
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform .2s;
+}
+
+header #logo:hover
+{
+    transform: scale(1.1);
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #000;
+    border-radius: 20px;
+}
+
+header ul li a:hover,   
+#activated
+{
+    transition: 500ms;
+    background: gray;
+}
+
+section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    overflow: hidden;
+}
+
+section img
+{
+    position: relative;
+    width: 50%;
+    height: 70%;
+    top: 7em;
+    animation: fadeAndScale 1s cubic-bezier(.39, -1.05, .58, 1.95);
+    animation-delay: -0.2s;
+}
+
+section ul
+{
+    position: relative;
+    top: 14em;
+    right: 5vh;
+    animation: RightTransform 2s;
+    animation-delay: -0.7s;
+}
+
+@keyframes fadeAndScale
+{
+    0%
+    {
+        opacity: 0%;
+        transform: scale3d(.75, .75, 1);
+    }
+
+    70%
+    {
+        opacity: 0%;
+        transform: scale3d(.75, .75, 1);
+    }
+
+    100%
+    {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes RightTransform
+{
+    0%
+    {
+        right: 100vh;
+    }
+
+    100%
+    {
+        right: 5vh;
+    }
+}
